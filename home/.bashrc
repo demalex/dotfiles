@@ -7,25 +7,13 @@
 # If not running interactively, don't do anything
 [[ -z "$PS1" ]] && return
 
-# Shell Options
-# ----------------------------------------------------------------------------
-
-# Correct minor errors in the spelling of pathnames when using `cd`
-shopt -s cdspell
-
-# Check the window size after a process completes
-shopt -s checkwinsize
-
-# Append to the history file, rather than overwriting it
-shopt -s histappend
-
-# Enable case-insensitive pattern matching when performing filename expansion
-shopt -s nocaseglob
-
 # Shell Environment
 # ----------------------------------------------------------------------------
 
-# Make `vi` the default editor
+#Colorized shell
+export CLICOLOR=true
+
+# Make `vim` the default editor
 export EDITOR=vim
 
 # Don't save duplicate entries on the history list
