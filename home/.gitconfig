@@ -11,11 +11,11 @@
   ui = auto
 
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore_global
 
 [credential]
   helper = osxkeychain
 
 [user]
-  name = Joep Loijens
-  email = joep.loijens@gmail.com
+  name = Alex Demishkevych
+  email = demalex@me.com
