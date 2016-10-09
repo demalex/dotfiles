@@ -1,34 +1,27 @@
+# Homebrew additions
 tap 'caskroom/cask'
-tap 'homebrew/bundle'
 tap 'homebrew/dupes'
-tap 'joeploijens/tap'
-cask 'java'
-brew 'readline'
-brew 'bash'
-brew 'openssl'
-brew 'autoconf'
-brew 'homebrew/dupes/rsync'
-brew 'ack'
-brew 'flac'
-brew 'jhead'
-brew 'ssh-copy-id'
-brew 'tree'
-brew 'unrar'
-brew 'wget'
-brew 'xz'
-brew 'jpeg'
-brew 'libpng'
-brew 'libtiff'
-brew 'little-cms2'
-brew 'freetype'
-brew 'pkg-config'
-brew 'libtool'
-brew 'graphicsmagick', args: ['with-little-cms2', 'without-magick-plus-plus']
-brew 'ruby-build'
+
+# Homebrew apps
+brew 'mas'
+brew 'mogenerator'
+brew 'carthage'
 brew 'rbenv'
-brew 'cmake'
-brew 'mongodb'
-brew 'redis'
+
+# Cask
+cask 'appcode'
 cask 'atom'
-cask 'electron'
+cask 'wwdc'
+cask 'zeplin'
+cask 'anki'
+cask 'gitup'
+
+# Torrents
 cask 'transmission'
+cask 'transmission-remote-gui'
+
+# AppStore
+mas 'Xcode', id: 497799835
+mas 'Slack', id: 803453959
+mas 'Pomodoro One', id: 907364780
+mas 'Easy APNs Provider', id: 989622350
