@@ -15,10 +15,9 @@ cask 'wwdc'
 cask 'zeplin'
 cask 'anki'
 cask 'gitup'
-
-# Torrents
+cask 'vlc'
+cask 'slack'
 cask 'transmission'
-cask 'transmission-remote-gui'
 
 # AppStore
 mas 'Xcode', id: 497799835
