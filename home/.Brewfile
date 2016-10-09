@@ -17,6 +17,7 @@ cask 'anki'
 cask 'gitup'
 cask 'vlc'
 cask 'slack'
+cask 'charles'
 cask 'transmission'
 
 # AppStore
