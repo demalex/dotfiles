@@ -16,12 +16,15 @@ cask 'zeplin'
 cask 'anki'
 cask 'gitup'
 cask 'vlc'
-cask 'slack'
 cask 'charles'
 cask 'transmission'
+cask 'telegram'
+cask 'zoomus'
+
 
 # AppStore
 mas 'Xcode', id: 497799835
 mas 'Slack', id: 803453959
 mas 'Pomodoro One', id: 907364780
 mas 'Easy APNs Provider', id: 989622350
+mas 'The Unarchiver', id: 425424353
