@@ -6,6 +6,8 @@
   ci = commit
   co = checkout
   st = status
+  dsa = checkout -- 
+  unst = reset HEAD
 
 [color]
   ui = auto

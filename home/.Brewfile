@@ -21,7 +21,6 @@ cask 'transmission'
 cask 'telegram'
 cask 'zoomus'
 
-
 # AppStore
 mas 'Xcode', id: 497799835
 mas 'Slack', id: 803453959
