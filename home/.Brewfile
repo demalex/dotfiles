@@ -28,3 +28,4 @@ mas 'Pomodoro One', id: 907364780
 mas 'Easy APNs Provider', id: 989622350
 mas 'The Unarchiver', id: 425424353
 mas 'Twitter', id: 409789998
+mas 'Pages', id: 409201541
