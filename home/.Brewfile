@@ -21,6 +21,7 @@ cask 'transmission'
 cask 'telegram'
 cask 'zoomus'
 cask 'dropbox'
+cask 'skype'
 
 # AppStore
 mas 'Xcode', id: 497799835
