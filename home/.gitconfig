@@ -6,8 +6,9 @@
   ci = commit
   co = checkout
   st = status
-  discard = checkout -- 
+  discard = checkout --
   unstage = reset HEAD
+  lg = log --oneline --grpah --decorate
 
 [color]
   ui = auto
