@@ -22,7 +22,7 @@ cask 'telegram'
 cask 'zoomus'
 cask 'dropbox'
 cask 'skype'
-cask 'chrome'
+cask 'google-chrome'
 
 # AppStore
 mas 'Xcode', id: 497799835
