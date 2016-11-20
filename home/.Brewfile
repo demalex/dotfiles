@@ -7,6 +7,7 @@ brew 'mas'
 brew 'mogenerator'
 brew 'carthage'
 brew 'rbenv'
+brew 'nmap'
 
 # Cask
 cask 'appcode'
