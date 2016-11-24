@@ -23,6 +23,9 @@ alias h='history'
 #   -H: follow symbolic links on the command line
 alias ls='ls -alFH'
 
+# Delete all local git branches which do not contain 'develop' in name
+alias gitbc='git branch | grep -v develop | xargs -n 1 git branch -D'
+
 # Network
 # ----------------------------------------------------------------------------
 
