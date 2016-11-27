@@ -22,11 +22,33 @@ command -v git >/dev/null 2>&1 || { echo "$PROG: git: command not found"; exit 1
 echo "Syncing dotfiles..."
 cd "$(dirname "${BASH_SOURCE}")"
 git pull origin master
+if [[ $? -eq 1 ]]; then
+  echo "Sync failed"
+  exit 1
+fi
+echo "Ok"
+
+echo "Installing Homebrew..."
+echo "Downloading script..."
+BREW_SCRIPT=$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
+if [[ -z $BREW_SCRIPT ]]; then
+  echo "Install failed. Script has zero length"
+  exit 1
+fi
+echo "Ok"
+echo "Runnig script..."
+ruby -e "${BREW_SCRIPT}"
+if [[ $? -eq 1 ]]; then
+  echo "Install failed"
+  exit 1
+fi
+echo "Ok"
+
 
 # Verify that the user wants to continue before potentially overwriting files.
-read -p "This may overwrite existing files. Are you sure? (y/n) " -n 1
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-  install_dotfiles
-  source ~/.bash_profile
-fi
+# read -p "This may overwrite existing files. Are you sure? (y/n) " -n 1
+# echo
+# if [[ $REPLY =~ ^[Yy]$ ]]; then
+#   install_dotfiles
+#   source ~/.bash_profile
+# fi
