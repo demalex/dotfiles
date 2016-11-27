@@ -61,7 +61,7 @@ fi
 echo "Ok"
 
 echo "Installing gem/bundler..."
-gem install bundler
+sudo gem install bundler
 if [[ $? -eq 1 ]]; then
   echo "Install failed"
   exit 1
