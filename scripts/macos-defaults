@@ -17,9 +17,10 @@ then
 fi
 
 # macOS Sierra only...
-if ! [[ $(sw_vers -productVersion) =~ ^10\.11\..+ ]]
+VERSION=$(sw_vers -productVersion)
+if ! [[ $VERSION =~ ^10\.12\..+ ]]
 then
-  echo "$PROG script is intended for macOS versions 10.11.x"
+  echo "$PROG script is intended for macOS versions 10.12.x"
   exit 1
 fi
 
