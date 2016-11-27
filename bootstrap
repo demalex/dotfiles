@@ -44,11 +44,34 @@ if [[ $? -eq 1 ]]; then
 fi
 echo "Ok"
 
+echo "Installing homebrew/bundle..."
+brew tap homebrew/bundle
+if [[ $? -eq 1 ]]; then
+  echo "Install failed"
+  exit 1
+fi
+echo "Ok"
+
+echo "Installing homebrew/rbenv..."
+brew install rbenv
+if [[ $? -eq 1 ]]; then
+  echo "Install failed"
+  exit 1
+fi
+echo "Ok"
+
+echo "Installing gem/bundler..."
+gem install bundler
+if [[ $? -eq 1 ]]; then
+  echo "Install failed"
+  exit 1
+fi
+echo "Ok"
 
 # Verify that the user wants to continue before potentially overwriting files.
-# read -p "This may overwrite existing files. Are you sure? (y/n) " -n 1
-# echo
-# if [[ $REPLY =~ ^[Yy]$ ]]; then
-#   install_dotfiles
-#   source ~/.bash_profile
-# fi
+read -p "This operation will overwrite existing files. Are you sure? (y/n) " -n 1
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+  install_dotfiles
+  source ~/.bash_profile
+fi
