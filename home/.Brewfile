@@ -1,6 +1,7 @@
 # Homebrew additions
 tap 'caskroom/cask'
 tap 'homebrew/dupes'
+tap 'osx-cross/avr'
 
 # Homebrew apps
 brew 'mas'
