@@ -34,7 +34,10 @@ cask 'steam'
 #CAD stuff
 #cask 'eagle'
 #cask 'openscad'
+
+#3D printing
 #cask 'slic3r'
+#cask 'printrun'
 
 # AppStore
 mas 'Slack', id: 803453959
