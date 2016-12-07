@@ -1,7 +1,13 @@
 # Homebrew additions
 tap 'caskroom/cask'
 tap 'homebrew/dupes'
-tap 'osx-cross/avr'
+
+#AVR Development repository
+#tap 'osx-cross/avr'
+
+#avr-lib
+#brew 'avr-libc'
+#brew 'avrdude'
 
 # Homebrew apps
 brew 'mas'
@@ -24,6 +30,10 @@ cask 'dropbox'
 cask 'skype'
 cask 'google-chrome'
 cask 'steam'
+
+#CAD stuff
+#cask 'eagle'
+#cask 'openscad'
 
 # AppStore
 mas 'Slack', id: 803453959
