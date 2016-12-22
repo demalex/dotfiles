@@ -14,6 +14,7 @@ brew 'mas'
 brew 'mogenerator'
 brew 'carthage'
 brew 'nmap'
+brew 'tmux'
 
 # Cask
 cask 'appcode'
