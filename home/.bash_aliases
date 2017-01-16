@@ -29,6 +29,9 @@ alias gitbc='git branch | grep -v develop | xargs -n 1 git branch -D'
 # Finds and opens xcode workspace project in current directoty
 alias oxcw='find -X ./*.xcworkspace -type d -maxdepth 0 | xargs -n 1 open'
 
+# Goes to main repositiries folder
+alias godev='cd ~/reps/'
+
 # Network
 # ----------------------------------------------------------------------------
 
