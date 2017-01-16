@@ -26,52 +26,68 @@ if [[ $? -eq 1 ]]; then
   echo "Sync failed"
   exit 1
 fi
-echo "Ok"
 
-echo "Installing Homebrew..."
-echo "Downloading script..."
-BREW_SCRIPT=$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
-if [[ -z $BREW_SCRIPT ]]; then
-  echo "Install failed. Script has zero length"
-  exit 1
-fi
-echo "Ok"
-echo "Runnig script..."
-ruby -e "${BREW_SCRIPT}"
-if [[ $? -eq 1 ]]; then
-  echo "Install failed"
-  exit 1
-fi
-echo "Ok"
+install_homebrew() {
+  echo "Installing Homebrew..."
+  echo "Downloading script..."
+  BREW_SCRIPT=$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
+  if [[ -z $BREW_SCRIPT ]]; then
+    echo "Installation failed. Script has zero length"
+    exit 1
+  fi
+  echo "Ok"
 
-echo "Installing homebrew/bundle..."
-brew tap homebrew/bundle
-if [[ $? -eq 1 ]]; then
-  echo "Install failed"
-  exit 1
-fi
-echo "Ok"
+  echo "Runnig script..."
+  ruby -e "${BREW_SCRIPT}"
+  if [[ $? -eq 1 ]]; then
+    echo "Installation failed"
+    exit 1
+  fi
+  echo "Ok"
+}
 
-echo "Installing homebrew/rbenv..."
-brew install rbenv
-if [[ $? -eq 1 ]]; then
-  echo "Install failed"
-  exit 1
-fi
-echo "Ok"
+install_homebrew_bundle() {
+  echo "Installing homebrew/bundle..."
+  brew tap homebrew/bundle
+  if [[ $? -eq 1 ]]; then
+    echo "Installation failed"
+    exit 1
+  fi
+  echo "Ok"
+}
 
-echo "Installing gem/bundler..."
-sudo gem install bundler
-if [[ $? -eq 1 ]]; then
-  echo "Install failed"
-  exit 1
-fi
-echo "Ok"
+install_rbenv() {
+  echo "Installing homebrew/rbenv..."
+  brew install rbenv
+  if [[ $? -eq 1 ]]; then
+    echo "Installation failed"
+    exit 1
+  fi
+  echo "Ok"
+}
+install_bundler() {
+  echo "Installing gem/bundler..."
+  sudo gem install bundler
+  if [[ $? -eq 1 ]]; then
+    echo "Installation failed"
+    exit 1
+  fi
+  echo "Ok"
+}
 
 # Verify that the user wants to continue before potentially overwriting files.
-read -p "This operation will overwrite existing files. Are you sure? (y/n) " -n 1
+read -p "Do you want to install dotfiles? This operation will overwrite existing files. Are you sure? (y/n) " -n 1
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   install_dotfiles
   source ~/.bash_profile
+fi
+
+read -p "Do you want to make basic tools setup? (y/n) " -n 1
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+  install_homebrew
+  install_homebrew_bundle
+  install_rbenv
+  install_bundler
 fi

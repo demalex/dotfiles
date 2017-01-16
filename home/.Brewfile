@@ -10,6 +10,7 @@ tap 'homebrew/dupes'
 #brew 'avrdude'
 
 # Homebrew apps
+brew 'pyenv'
 brew 'mas'
 brew 'mogenerator'
 brew 'carthage'
