@@ -36,6 +36,7 @@ cask 'steam'
 #CAD stuff
 #cask 'eagle'
 #cask 'openscad'
+#cask 'sketchup'
 
 #3D printing
 #cask 'slic3r'
