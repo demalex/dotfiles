@@ -31,6 +31,7 @@ cask 'zoomus'
 cask 'dropbox'
 cask 'skype'
 cask 'google-chrome'
+cask 'firefox'
 cask 'steam'
 
 #CAD stuff
