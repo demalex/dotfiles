@@ -33,6 +33,7 @@ cask 'skype'
 cask 'google-chrome'
 cask 'firefox'
 cask 'steam'
+cask 'flux'
 
 #CAD stuff
 #cask 'eagle'
