@@ -40,7 +40,7 @@ alias godev='cd ~/sources/'
 alias godot='cd ~/reps/dotfiles/'
 
 # Goes to ssh directory
-alias godot='cd ~/sources/dotfiles/'
+alias gossh='cd ~/sources/dotfiles/'
 
 # Network
 # ----------------------------------------------------------------------------
