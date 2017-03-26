@@ -37,10 +37,10 @@ alias oxcp='find -X ./*.xcodeproj -type d -maxdepth 0 | xargs -n 1 open'
 alias godev='cd ~/sources/'
 
 # Goes to dotfiles repository
-alias godot='cd ~/reps/dotfiles/'
+alias godot='cd ~/sources/dotfiles/'
 
 # Goes to ssh directory
-alias gossh='cd ~/sources/dotfiles/'
+alias gossh='cd ~/.ssh/'
 
 # Network
 # ----------------------------------------------------------------------------
