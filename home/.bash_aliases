@@ -34,10 +34,13 @@ alias oxcw='find -X ./*.xcworkspace -type d -maxdepth 0 | xargs -n 1 open'
 alias oxcp='find -X ./*.xcodeproj -type d -maxdepth 0 | xargs -n 1 open'
 
 # Goes to main repositiries folder
-alias godev='cd ~/reps/'
+alias godev='cd ~/sources/'
 
 # Goes to dotfiles repository
 alias godot='cd ~/reps/dotfiles/'
+
+# Goes to ssh directory
+alias godot='cd ~/sources/dotfiles/'
 
 # Network
 # ----------------------------------------------------------------------------
