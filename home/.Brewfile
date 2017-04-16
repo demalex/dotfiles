@@ -35,6 +35,7 @@ cask 'firefox'
 cask 'steam'
 cask 'flux'
 cask 'tunnelblick'
+cask 'paw'
 
 #CAD stuff
 #cask 'eagle'
