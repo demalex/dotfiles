@@ -26,7 +26,6 @@ cask 'gitup'
 cask 'vlc'
 cask 'charles'
 cask 'transmission'
-cask 'telegram'
 cask 'zoomus'
 cask 'dropbox'
 cask 'skype'
@@ -36,6 +35,7 @@ cask 'steam'
 cask 'flux'
 cask 'tunnelblick'
 cask 'paw'
+cask 'ganttproject'
 
 #CAD stuff
 #cask 'eagle'
@@ -53,3 +53,4 @@ mas 'Easy APNs Provider', id: 989622350
 mas 'The Unarchiver', id: 425424353
 mas 'Twitter', id: 409789998
 mas 'Pages', id: 409201541
+mas 'Telegram', id: 747648890
