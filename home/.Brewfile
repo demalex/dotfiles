@@ -1,5 +1,4 @@
 # Homebrew additions
-tap 'caskroom/cask'
 tap 'homebrew/dupes'
 
 #AVR Development repository
@@ -36,6 +35,7 @@ cask 'flux'
 cask 'tunnelblick'
 cask 'paw'
 cask 'ganttproject'
+cask 'enpass'
 
 #CAD stuff
 #cask 'eagle'
