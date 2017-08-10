@@ -15,6 +15,7 @@ brew 'mogenerator'
 brew 'carthage'
 brew 'nmap'
 brew 'tmux'
+brew 'swiftlint'
 
 # Cask
 cask 'appcode'
