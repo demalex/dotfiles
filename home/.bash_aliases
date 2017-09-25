@@ -42,6 +42,9 @@ alias godot='cd ~/sources/dotfiles/'
 # Goes to ssh directory
 alias gossh='cd ~/.ssh/'
 
+#Add all private ssh key identities to the authentication agent
+alias ssh-add-all='command ls ~/.ssh | grep -v .pub | grep -v known_hosts | xargs -n 1 -I{} ssh-add -K ~/.ssh/{}'
+
 # Network
 # ----------------------------------------------------------------------------
 
