@@ -16,6 +16,8 @@ brew 'carthage'
 brew 'nmap'
 brew 'tmux'
 brew 'swiftlint'
+brew 'sourcery'
+brew 'wakeonlan'
 
 # Cask
 cask 'appcode'
@@ -36,8 +38,8 @@ cask 'flux'
 cask 'tunnelblick'
 cask 'paw'
 # cask 'ganttproject'
-cask 'enpass'
 cask 'tunnelbear'
+cask 'reveal'
 
 #CAD stuff
 #cask 'eagle'
@@ -56,3 +58,4 @@ mas 'The Unarchiver', id: 425424353
 mas 'Twitter', id: 409789998
 mas 'Pages', id: 409201541
 mas 'Telegram', id: 747648890
+mas 'Enpass password manager', id: 732710998
