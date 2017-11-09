@@ -18,6 +18,7 @@ brew 'tmux'
 brew 'swiftlint'
 brew 'sourcery'
 brew 'wakeonlan'
+brew 'graphviz'
 
 # Cask
 cask 'appcode'
@@ -40,6 +41,7 @@ cask 'paw'
 # cask 'ganttproject'
 cask 'tunnelbear'
 cask 'reveal'
+cask 'spotify'
 
 #CAD stuff
 #cask 'eagle'
