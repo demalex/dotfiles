@@ -68,7 +68,7 @@ then
   fi
 
   # Homebrew Cask
-  export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=$(brew --repo)/Caskroom"
+  export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
   # Ruby version management: rbenv and ruby-build
   if [[ -n $(command -v rbenv) ]]
