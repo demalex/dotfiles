@@ -43,6 +43,9 @@ cask 'tunnelbear'
 cask 'reveal'
 cask 'spotify'
 
+#Arduino
+#cask 'arduino'
+
 #CAD stuff
 #cask 'eagle'
 #cask 'openscad'
