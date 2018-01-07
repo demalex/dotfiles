@@ -22,7 +22,7 @@ brew 'graphviz'
 
 # Cask
 cask 'appcode'
-cask 'atom'
+cask 'visual-studio-code'
 cask 'wwdc'
 cask 'opensim'
 # cask 'zeplin'
