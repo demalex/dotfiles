@@ -75,6 +75,12 @@ install_bundler() {
   echo "Ok"
 }
 
+setup_updating_cron() {
+  echo "Installing updating cron task..."
+  cp ./scripts/.update.sh ~
+  crontab ./scripts/.crontab_update 
+}
+
 # Verify that the user wants to continue before potentially overwriting files.
 read -p "Do you want to install dotfiles? This operation will overwrite existing files. Are you sure? (y/n) " -n 1
 echo
@@ -90,4 +96,5 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   install_homebrew_bundle
   install_rbenv
   install_bundler
+  setup_updating_cron
 fi
