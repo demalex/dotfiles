@@ -190,6 +190,9 @@ defaults write com.apple.dt.Xcode ShowBuildOperationDuration true
 # Show tab bar
 defaults write com.apple.dt.Xcode AlwaysShowTabBar -bool true
 
+#Faster build times by leveraging multi-core CPU
+defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileTasks `sysctl -n hw.ncpu`
+
 for app in "Dock" "Terminal" \
   "Finder"; do
 	killall "${app}" &> /dev/null
