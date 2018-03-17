@@ -42,6 +42,7 @@ cask 'paw'
 cask 'tunnelbear'
 cask 'reveal'
 cask 'spotify'
+cask 'twitch'
 
 #Arduino
 #cask 'arduino'
