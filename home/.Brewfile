@@ -1,6 +1,9 @@
 # Homebrew additions
 tap 'homebrew/dupes'
 
+# Vapor tap
+tap 'vapor/homebrew-tap'
+
 #AVR Development repository
 #tap 'osx-cross/avr'
 
