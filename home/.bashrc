@@ -79,6 +79,15 @@ then
   fi
 fi
 
+# Swiftenv
+if [[ -n $(command -v swiftenv) ]]
+then
+  # Load swiftenv automatically by appending
+  # the following to your ~/.bash_profile:
+
+  eval "$(swiftenv init -)"
+fi
+
 # Append ~/local/bin to PATH
 [[ -d $HOME/local/bin ]] && export PATH=$PATH:$HOME/local/bin
 
