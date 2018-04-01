@@ -4,12 +4,14 @@ tap 'homebrew/dupes'
 # Vapor tap
 tap 'vapor/homebrew-tap'
 
-#AVR Development repository
+# AVR Development repository
 #tap 'osx-cross/avr'
 
-#avr-lib
+# avr-lib
 #brew 'avr-libc'
 #brew 'avrdude'
+
+# swiftenv tap
 
 # Homebrew apps
 # brew 'pyenv'
@@ -22,6 +24,7 @@ brew 'swiftlint'
 brew 'sourcery'
 brew 'wakeonlan'
 brew 'graphviz'
+brew 'swiftenv'
 
 # Cask
 cask 'appcode'
