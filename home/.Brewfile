@@ -67,7 +67,8 @@ mas 'Slack', id: 803453959
 mas 'Pomodoro One', id: 907364780
 mas 'Easy APNs Provider', id: 989622350
 mas 'The Unarchiver', id: 425424353
-mas 'Twitter', id: 409789998
+mas 'Tweetbot 2 for Twitter', id: 557168941
 mas 'Pages', id: 409201541
 mas 'Telegram', id: 747648890
 mas 'Enpass password manager', id: 732710998
+mas 'Trello', id: 1278508951

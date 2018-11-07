@@ -16,14 +16,6 @@ then
   exit 1
 fi
 
-# macOS Sierra only...
-VERSION=$(sw_vers -productVersion)
-if ! [[ $VERSION =~ ^10\.12\..+ ]]
-then
-  echo "$PROG script is intended for macOS versions 10.12.x"
-  exit 1
-fi
-
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
