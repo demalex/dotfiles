@@ -43,7 +43,7 @@ cask 'google-chrome'
 # cask 'steam'
 cask 'flux'
 cask 'tunnelblick'
-cask 'paw'
+cask 'postman'
 # cask 'ganttproject'
 cask 'tunnelbear'
 cask 'reveal'
@@ -72,3 +72,4 @@ mas 'Pages', id: 409201541
 mas 'Telegram', id: 747648890
 mas 'Enpass password manager', id: 732710998
 mas 'Trello', id: 1278508951
+mas 'Spark', id:1176895641
